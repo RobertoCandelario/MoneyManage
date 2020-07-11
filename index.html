@@ -1,0 +1,39 @@
+<!doctype html>
+
+<! --- CREATED BY ROBERTO CANDELARIO --->
+<! --- JULY 2020 --->
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Money Management</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" /> 
+</head>
+
+<body>
+    <header>
+        <h1>Money Management</h1>
+    </header>
+    <form class="container">
+        <input type="text" class="name-box" placeholder="Name">
+        <input type="text" class="amount-box" placeholder="amount">
+        <input type="text" class="due-date-box" placeholder="Due Date">
+        <button class="addbutton" type='submit'><i class="fas fa-plus-square"></i></button>
+        <div class="select">
+            <select name="Expense" class="filter-expense">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="uncompleted">Uncompleted</option>
+            </select>
+        </div>
+    </form>
+    
+    <div class="expenses-container">
+        <ul class="expense-list">
+        </ul>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
